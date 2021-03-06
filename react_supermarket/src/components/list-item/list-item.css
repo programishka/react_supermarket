@@ -1,0 +1,23 @@
+.logo-img{
+    width: 150px;
+}
+
+.item-list{
+    margin-top: 30px;
+    position: relative;
+}
+
+.item-list :hover{
+    background-color: #0F0;
+}
+
+.item-description{
+    display: none;
+    top: 0px;
+    position: absolute;
+    z-index: 10;
+    padding: 20px;
+    width: auto;
+    background-color: #fff;
+
+}

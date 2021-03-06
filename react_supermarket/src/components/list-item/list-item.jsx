@@ -1,8 +1,20 @@
 import React from 'react';
-import logo from "../../logo.svg";
+import './list-item.css';
 
-const ListItem = () => {
-    return <img src={logo} className="App-logo" alt="logo" />;
+const ListItem = (props) => {
+    const showDescription = (e) => {
+        e.target.nextSibling.style.display = "block";
+    }
+    const hideDescription = (e) => {
+        e.target.nextSibling.style.display = "none";
+    }
+
+    const {data} = props;
+    return <div className="item-list">
+        <img src={data.img} className="logo-img" alt="logo" onMouseOver={showDescription} onMouseOut={hideDescription} />
+        <div className="item-description"> Я люблю {data.description}
+        </div>
+    </div>;
 }
 
 export default ListItem;
