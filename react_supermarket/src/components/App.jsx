@@ -2,7 +2,9 @@ import React from 'react';
 import ListCard from "./list-cards/list-card";
 
 class App extends React.Component {
+    initialState = {
 
+    }
     render() {
         const data = [
             {
